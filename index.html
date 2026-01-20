@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FlashJersey | Football Shirts</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ 
+<body>
+
+<header class="navbar">
+  <div class="logo">Flash<span>Jersey</span></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="teams.html">Teams</a>
+    <a href="retro.html">Retro</a>
+     <a href="contact.html">Contact</a>
+  </nav>
+ <div class="cart-icon" onclick="toggleCart()">
+  <i class="fa-solid fa-cart-shopping"></i>
+  <span id="cart-count">0</span>
+</div>
+</header>
+
+<section class="hero">
+  <h1>Premium Football Jerseys</h1>
+  <h4>New season • Retro • Limited editions</h4>
+  <a href="#shop" class="hero-btn">Shop Now</a>
+</section>
+
+<section id="shop" class="shop">
+  <h2>Featured Jerseys</h2>
+
+  <div class="products">
+    <div class="product">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.u-M_Z4Y7wDfU6VHmsAzsKQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+      <h3>Real Madrid Home</h3>
+      <p>$49.99</p>
+      <button onclick="addToCart('Real Madrid Home',49.99)">Add to Cart</button>
+    </div>
+    
+
+    <div class="product">
+      <img src="https://assets.adidas.com/images/w_1880,f_auto,q_auto/04f3367fcc874b80ada183ac69f9ca05_9366/JJ2143_01_laydown.jpg" alt="">
+      <h3>FC bayern 25/26 Away jersy</h3>
+      <p>$47.99</p>
+      <button onclick="addToCart('FC bayern 25/26 Away',47.99)">Add to Cart</button>
+    </div>
+
+
+     <div class="product">
+      <img src="https://soccerarmor.com/wp-content/uploads/2023/10/Barcelona-2324-UCL-Home-Jersey.jpg" alt="">
+      <h3>Barcelona Home</h3>
+      <p>$47.99</p>
+      <button onclick="addToCart('Barcelona Home',47.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://assets.adidas.com/images/w_1880,f_auto,q_auto/ed2e8529e2814f02acb26a66eed44492_9366/JP3030_01_laydown.jpg" alt="">
+      <h3>Man United Away</h3>
+      <p>$44.99</p>
+      <button onclick="addToCart('Man United Away',44.99)">Add to Cart</button>
+    </div>
+
+
+    
+
+    <div class="product">
+      <img src="https://www.soccerlord.se/wp-content/uploads/2020/05/Retro-AC-Milan-Away-Football-Shirt-06-07-500x500.jpg" alt="">
+      <h3>AC Milan Retro 1989 Shirt</h3>
+      <p>$54.99</p>
+      <button onclick="addToCart('AC Milan Retro',54.99)">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <p>© 2026 FlashJersey </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

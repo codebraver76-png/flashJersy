@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FlashJersey | Football Shirts</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ 
+<body>
+
+<header class="navbar">
+  <div class="logo">Flash<span>Jersey</span></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="teams.html">Teams</a>
+    <a href="retro.html">Retro</a>
+     <a href="contact.html">Contact</a>
+  </nav>
+ <div class="cart-icon" onclick="toggleCart()">
+  <i class="fa-solid fa-cart-shopping"></i>
+  <span id="cart-count">0</span>
+</div>
+</header>
+
+
+<section class="shop">
+  <h2>Retro Collection</h2>
+  <div class="products">
+    <div class="product">
+         <img src="https://th.bing.com/th/id/R.a0e0853b0585ec5c95b951aa29955f69?rik=lLU1zhwyZ9dDLw&riu=http%3a%2f%2fretrosleague.com%2fcdn%2fshop%2fproducts%2fBR1.jpg%3fv%3d1645508072&ehk=CrhC07LzUWgZRSQ6yEmhgaXaUZr6qwoWMTJOOIVz4xQ%3d&risl=&pid=ImgRaw&r=0">
+      <h3>Brazil 2002</h3>
+      <p>$25.99</p>
+      <button onclick="addToCart('Brazil 2002',25.99)">Add to Cart</button>
+    </div>
+
+
+    <div class="product">
+         <img src="https://th.bing.com/th/id/OIP.QXXGGAbbgRMQBBr-f7_UUAHaHY?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
+      <h3> England Special Edition </h3>
+      <p>34.99$</p>
+      <button onclick="addToCart('Brazil 2002 Retro',55)">Add to Cart</button>
+    </div>
+     
+     <div class="product">
+      <img src="https://www.soccerlord.se/wp-content/uploads/2020/05/Retro-AC-Milan-Away-Football-Shirt-06-07-500x500.jpg" alt="">
+      <h3>AC Milan Retro 1989 Shirt</h3>
+      <p>$54.99</p>
+      <button onclick="addToCart('AC Milan Retro',54.99)">Add to Cart</button>
+    </div>
+     
+    <div class="product">
+      <img src="https://www.retroclubkit.co/cdn/shop/products/E371BC21-A507-4A8E-AE70-81C195905AA5.png?v=1706717439&width=940" alt="">
+      <h3>Ronaldo Shirt</h3>
+      <p>$54.99</p>
+      <button onclick="addToCart('Ronaldo Shirt',54.99)">Add to Cart</button>
+    </div>
+
+     <div class="product">
+      <img src="https://i.pinimg.com/originals/dd/0f/40/dd0f4048c3296a2244d025741d76d4e7.png" alt="">
+      <h3>Argentina Home 2006</h3>
+      <p>$54.99</p>
+      <button onclick="addToCart('Argentina Home 2006',54.99)">Add to Cart</button>
+    </div>
+  </div>
+
+  </div>
+
+
+</section>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FlashJersey | Football Shirts</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ 
+<body>
+
+<header class="navbar">
+  <div class="logo">Flash<span>Jersey</span></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="teams.html">Teams</a>
+    <a href="retro.html">Retro</a>
+     <a href="contact.html">Contact</a>
+  </nav>
+ <div class="cart-icon" onclick="toggleCart()">
+  <i class="fa-solid fa-cart-shopping"></i>
+  <span id="cart-count">0</span>
+</div>
+</header>
+
+<section class="shop">
+  <h2>Shop Jerseys</h2>
+  <div class="products">
+    <div class="product">
+      <img src="https://footdealer.co/wp-content/uploads/2025/06/Maillot-Match-Real-Madrid-Domicile-2025-2026-1-768x768.jpg">
+      <h3>Real Madrid Home</h3>
+      <p>$49.99</p>
+      <button onclick="addToCart('Real Madrid Home',49.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.YBNCB-DflUf8i6JQ21ErVgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+      <h3>Inter Miami CF 25/26</h3>
+      <p>$49.99</p>
+      <button onclick="addToCart('Inter Miami CF 25/26',49.99)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.u-M_Z4Y7wDfU6VHmsAzsKQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+      <h3>Real Madrid traning suit</h3>
+      <p>$49.99</p>
+      <button onclick="addToCart('Real Madrid training suit',49.99)">Add to Cart</button>
+    </div>
+
+
+       <div class="product">
+      <img src="https://soccerarmor.com/wp-content/uploads/2023/10/Barcelona-2324-UCL-Home-Jersey.jpg" alt="">
+      <h3>Barcelona Home</h3>
+      <p>$47.99</p>
+      <button onclick="addToCart('Barcelona Home',47.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDBUcQf_CQTy6YVOrnYDScHflDCb3qkMTz2k5gOqIN54o4oB2LChCeblrgZ6Ef_Cn3gHmJ-DtbfgohZ5-eunIAsg2EHkShu6rzA_2laycsY2zB0papN4Bj7wCMZ1xNQpyb6ySeGg9NJ_R9/s1600/manchester-city-20-21-away-kit+%25282%2529.jpg">
+      <h3>Mancity Away jersy 20/21</h3>
+      <p>$49.99</p>
+      <button onclick="addToCart('Real Madrid Home',49.99)">Add to Cart</button>
+    </div>
+
+
+   
+     <div class="product">
+      <img src="https://soccerarmor.com/wp-content/uploads/2024/10/N.-Jackson-Chelsea25-Away-Jersey.jpg">
+      <h3>Chelsea-25/26</h3>
+      <p>$49.99</p>
+      <button onclick="addToCart('Chelsea-25/26',49.99)">Add to Cart</button>
+    </div>
+
+     <div class="product">
+      <img src="https://assets.adidas.com/images/w_1880,f_auto,q_auto/04f3367fcc874b80ada183ac69f9ca05_9366/JJ2143_01_laydown.jpg">
+      <h3>Men Away bayern 25/26</h3>
+      <p>$49.99</p>
+      <button onclick="addToCart('Men Away bayern 25/26',49.99)">Add to Cart</button>
+    </div>
+
+     <div class="product">
+      <img src="https://assets.adidas.com/images/w_1880,f_auto,q_auto/f54aaf314c3045d29ab6ad15ff1f4e20_9366/JV6423_01_laydown.jpg">
+      <h3>Liverpool FC 25/26</h3>
+      <p>$49.99</p>
+      <button onclick="addToCart('Liverpool FC 25/26',49.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://mufc-live.cdn.scayle.cloud/images/ad97c9fcc4ba97bee6afbd3dd8891bab.jpg?brightness=1&width=922&height=1230&quality=70&bg=ffffff">
+      <h3>Manchester United 25/26</h3>
+      <p>$39.99</p>
+      <button onclick="addToCart('Manchester United 25/26',39.99)">Add to Cart</button>
+    </div>
+     <div class="product">
+      <img src="https://footballprestige.com/cdn/shop/files/2526-manchester-city-home-kit-footballprestigecom-2025-premium-quality-675549.jpg?v=1746977447&width=1400">
+      <h3>manchester city 25/26</h3>
+      <p>$25.99</p>
+      <button onclick="addToCart('manchester city 25/26',25.99)">Add to Cart</button>
+    </div>
+
+      <div class="product">
+      <img src="https://www.gogoalshopcloud.com/upload/ttmall/img/20210127/ef5e9664f1f7f374d4adac414434108e.png">
+      <h3>PSG Tracksuit</h3>
+      <p>$25.99</p>
+      <button onclick="addToCart('PSG Tracksuit',25.99)">Add to Cart</button>
+    </div>
+
+       <div class="product">
+      <img src="https://legends.broadleafcloud.com/api/asset/content/RMCFMS0312-01-1.jpg?contextRequest=%7B%22forceCatalogForFetch%22:false,%22forceFilterByCatalogIncludeInheritance%22:false,%22forceFilterByCatalogExcludeInheritance%22:false,%22applicationId%22:%2201H4RD9NXMKQBQ1WVKM1181VD8%22,%22tenantId%22:%22REAL_MADRID%22%7D">
+      <h3>Real Madrid Tracksuit</h3>
+      <p>$25.99</p>
+      <button onclick="addToCart('Real Madrid Tracksuit',25.99)">Add to Cart</button>
+    </div>
+
+
+
+
+</section>
+
+ <h2 style="text-align: center;">Shop shoes</h2>
+<section class="products">
+
+    <div class="product">
+      <img src="https://zaboos.com/wp-content/uploads/2023/09/270538_Gallery_1_1178937.jpg" alt="Shoes 1">
+      <h3>Nike Air Zoom</h3>
+      <p>$120</p>
+      <button onclick="addToCart('Nike Air Zoom', 120)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://www.footballshirtculture.com/images/stories/adidas-x-ghosted-fg-core-black-signal-cyan/adidas_x_ghosted_fg_core_black_signal_cyan_b.jpg" alt="Shoes 2">
+      <h3>Adidas Predator</h3>
+      <p>$140</p>
+      <button onclick="addToCart('Adidas Predator', 140)">Add to Cart</button>
+    </div>
+
+
+    <div class="product">
+      <img src="https://thumblr.uniid.it/product/357999/26ffa0cae81a.jpg" alt="Shoes 3">
+      <h3>Puma Future</h3>
+      <p>$110</p>
+      <button onclick="addToCart('Puma Future', 110)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.prodirectsport.com/ProductImages/Main/274712_Main_Thumb_1305006.jpg" alt="Shoes 4">
+      <h3>Nike Phantom GX</h3>
+      <p>$130</p>
+      <button onclick="addToCart('Under Armour Highlight', 130)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://lovellcdn.b-cdn.net/products/1468366.jpg" alt="Shoes 4">
+      <h3>Adidas</h3>
+      <p>$126</p>
+      <button onclick="addToCart('Under Armour Highlight', 130)">Add to Cart</button>
+    </div>
+
+     <div class="product">
+      <img src="https://i.pinimg.com/736x/b7/ad/96/b7ad962fb23150c290c0c3fb60f74ca5.jpg" alt="Shoes 4">
+      <h3>Nike Air Zoom Mercurial Superfly 9 Elite CR7</h3>
+      <p>$159</p>
+      <button onclick="addToCart('Under Armour Highlight', 130)">Add to Cart</button>
+    </div>
+  </section>
+
+  <footer style="margin-top: 20px;">
+  <p>© 2026 FlashJersey </p>
+</footer>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
